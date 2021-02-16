@@ -1,24 +1,32 @@
 package LAB7;
 
-public class car {
-     //attributse
+public class Car {
+
+    //attributes
     private String id;
     private String color;
-    private String brand;
+    private String Brand;
 
-    public car() {
-
+    public Car() {
     }
 
-    public car(String id, String color, String brand) {
-
+    public Car(String id, String color, String brand) {
         this.id = id;
         this.color = color;
-        this.brand = brand;
+        Brand = brand;
     }
 
     public String getId() {
         return id;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "id='" + id + '\'' +
+                ", color='" + color + '\'' +
+                ", Brand='" + Brand + '\'' +
+                '}';
     }
 
     public void setId(String id) {
@@ -34,10 +42,10 @@ public class car {
     }
 
     public String getBrand() {
-        return brand;
+        return Brand;
     }
 
     public void setBrand(String brand) {
-        this.brand = brand;
+        Brand = brand;
     }
 }
